@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/beautiful.css" type="text/css" />
+</head>
+<body>
+    <div class="top">
+        <h1>{{title}}</h1>
+        <div class="menun_top">
+            <a href="index.html">Документация</a>
+            <a href="todo.html">Заметки</a>
+            <a href="diagram.html">Блок схема</a>
+            <a href="deprecated.html">Не рекомендуется</a>
+            <a href="api.html">API</a>
+            <a href="examples.html">Примеры</a>
+        </div>
+    </div>
+    <div class="menu_left">
+        <ul>
+            {{menu_left_li}}
+        </ul>
+    </div>
+    <div class="content">
+        {{objects}}
+    </div>
+    <div class="bottom">Низ</div>
+</body>
+</html>

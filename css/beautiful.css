@@ -1,0 +1,165 @@
+body {
+    background-color: azure;
+    font-size: 150%;
+    font-family: sans-serif;
+    margin: 0;
+}
+strong {
+    color: #ff9a28;
+}
+h4 {
+    color: #4ebaff;
+    padding-bottom: 5px;
+}
+h1 {
+    color: #3e9eae;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0px 0px 0px 10px;
+}
+table {
+    border: 1px solid #d8cdc6;
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 100%;
+    border-right: none;
+}
+table tr {
+    border-top: 1px solid #d8cdc6;
+}
+table td {
+    padding: 0px 5px;
+    border-right: 1px solid #d8cdc6;
+}
+table caption {
+    text-align: left;
+    border-top: 1px solid #d8cdc6;
+    border-right: 1px solid #d8cdc6;
+    border-left: 1px solid #d8cdc6;
+    padding-left: 15px;
+}
+.deprecated {
+    text-decoration: line-through;
+    text-decoration-color: #ff2400;
+    text-decoration-style: wavy;
+}
+.table {
+    margin-top: 15px;
+}
+.top {
+    position: fixed;
+    width: 100%;
+    background-color: azure;
+    top: 0;
+    left: 0;
+    height: 60px;
+}
+.menun_top {
+    top: 15px;
+    display: inline;
+    position: fixed;
+    right: 15px;
+}
+.menun_top a {
+    display: inline;
+    margin-left: 30px;
+    color: cornflowerblue;
+}
+.content {
+    background-color: beige;
+    margin-left: 300px;
+    width: calc(100% - 320px);
+    height: calc(100% - 60px);
+    position: fixed;
+    top: 60px;
+    overflow: scroll;
+}
+.content p {
+    display: inline;
+}
+.content b {
+    color: grey;
+}
+.content h3 {
+    display: inline;
+    color: #b32127;
+}
+.content_doc {
+    background-color: beige;
+    width: 100%;
+    height: calc(100% - 60px);
+    position: fixed;
+    top: 60px;
+    overflow: scroll;
+    padding: 10px;
+    text-align: center;
+}
+.text {
+    width: 900px;
+    height: 100%;
+    display: inline-block;
+}
+.text p, .text pre, .text xmp, .text table {
+    text-align: left;
+}
+.text table {
+    color: grey;
+}
+.text .color_header {
+    color: black;
+}
+.S {
+    color: firebrick; /* Строки красные */
+}
+.func {
+    color: #ff9a28; /* Юзер-функции синие */
+}
+.C {
+    color: darkolivegreen; /* Комменты оранжевые */
+}
+.kwrd {
+    font-weight: bold; /* Ключевые слова полужирные */
+}
+.R {
+    color: gray; /*Серые регвыражения */ 
+}
+.object {
+    border-width: 1px;
+}
+.menu_left {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top: 60px;
+    border: 1px solid #d8cdc6;
+    background-color: beige;
+}
+.menu_left li {
+    list-style-type: none;
+}
+.menu_left ul {
+    padding: 0px 0px 0px 10px;
+}
+.menu_a {
+    color: #b32127;
+    font-weight: bold;
+}
+.parameter_name {
+    color: #1d26dd;
+}
+.parameter_description {
+    color: #057505;
+}
+.method:hover .additional {
+    display: block;
+}
+.method, .parameter, .parameters, .methods, .object {
+    border: 1px solid #d8cdc6;
+    padding: 7px;
+    margin-bottom: 7px;
+}
+.param {
+    color: #b00955;
+    display: inline;
+}
+

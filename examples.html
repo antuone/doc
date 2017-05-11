@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/beautiful.css" rel="stylesheet" type="text/css" />
+    <script src="prettify.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <h1>BodyBoom</h1>
+        <div class="menun_top">
+            <a href="index.html">Документация</a>
+            <a href="todo.html">Заметки</a>
+            <a href="diagram.html">Блок схема</a>
+            <a href="deprecated.html">Не рекомендуется</a>
+            <a href="api.html">API</a>
+            <a href="examples.html">Примеры</a>
+        </div>
+    </div>
+    <div class="content_doc">
+        <div class="text">
+            <h2>Примеры</h2>
+            <p>1. Чтобы получить и вывести расписание на эту неделю для определенного клуба используйте следующи код:</p>
+            <pre>
+    //Подключаем библиотеки
+    $assets = MODX_BASE_PATH . 'assets/modules/schedule/';
+    require_once $assets . 'includes.php';
+    //Получаем расписание на эту неделю
+    $thisWeekSchedule = DataGetter::schedule2('01', 'this week');
+    //Получаем список правил(ограничений) для вывода расписаний
+    $restrictions = TrainingRestriction::makeArrayFromActive();
+    //Применяем правила
+    $thisWeekSchedule->applyRestrictions($restrictions);
+    //Выводим расписание
+    echo $thisWeekSchedule->toHTML();
+            </pre>
+            <p>Выведится большая и нестилизованная таблица с расписанием</p>
+            <p>Где '01' это id клуба на качалова, 'this week' дает понять что расписание нужно на эту неделю. Если нужно расписание на следующую нужно написать 'next week'.</p>
+        </div>
+    </div>
+    <div class="bottom">
+        Низ
+    </div>
+</body>
+
+</html>
